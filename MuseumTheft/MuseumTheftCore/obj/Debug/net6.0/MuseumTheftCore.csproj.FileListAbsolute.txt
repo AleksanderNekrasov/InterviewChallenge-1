@@ -1,0 +1,12 @@
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\MuseumTheftCore.csproj.AssemblyReference.cache
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\MuseumTheftCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\MuseumTheftCore.AssemblyInfoInputs.cache
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\MuseumTheftCore.AssemblyInfo.cs
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\MuseumTheftCore.csproj.CoreCompileInputs.cache
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\bin\Debug\net6.0\MuseumTheftCore.deps.json
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\bin\Debug\net6.0\MuseumTheftCore.dll
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\bin\Debug\net6.0\MuseumTheftCore.pdb
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\MuseumTheftCore.dll
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\refint\MuseumTheftCore.dll
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\MuseumTheftCore.pdb
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftCore\obj\Debug\net6.0\ref\MuseumTheftCore.dll

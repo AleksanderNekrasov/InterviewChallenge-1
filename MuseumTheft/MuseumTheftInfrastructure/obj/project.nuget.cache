@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XXuoGIQ4/1ehXdbfpToThhEGyZ17tAS+2/Yw0gC+myGDvQY8gxJ9HriQ8gzZDyFt0UekowYk76rSA+mH8rM4ng==",
+  "success": true,
+  "projectFilePath": "D:\\DEV\\VisualStudio_MyApps\\InterviewChallenge\\SDWorx\\InterviewChallenge-1\\MuseumTheft\\MuseumTheftInfrastructure\\MuseumTheftInfrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexx\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\alexx\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\alexx\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

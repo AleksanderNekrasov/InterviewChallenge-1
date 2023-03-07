@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MuseumTheftInfrastructure/1.0.0": {
+        "dependencies": {
+          "MuseumTheftCore": "1.0.0"
+        },
+        "runtime": {
+          "MuseumTheftInfrastructure.dll": {}
+        }
+      },
+      "MuseumTheftCore/1.0.0": {
+        "runtime": {
+          "MuseumTheftCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MuseumTheftInfrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MuseumTheftCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

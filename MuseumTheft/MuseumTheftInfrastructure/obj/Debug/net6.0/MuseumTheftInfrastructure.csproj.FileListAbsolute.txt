@@ -1,0 +1,15 @@
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\bin\Debug\net6.0\MuseumTheftInfrastructure.deps.json
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\bin\Debug\net6.0\MuseumTheftInfrastructure.dll
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\bin\Debug\net6.0\MuseumTheftInfrastructure.pdb
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\bin\Debug\net6.0\MuseumTheftCore.dll
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\bin\Debug\net6.0\MuseumTheftCore.pdb
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.csproj.AssemblyReference.cache
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.AssemblyInfoInputs.cache
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.AssemblyInfo.cs
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.csproj.CoreCompileInputs.cache
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.csproj.CopyComplete
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.dll
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\refint\MuseumTheftInfrastructure.dll
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\MuseumTheftInfrastructure.pdb
+D:\DEV\VisualStudio_MyApps\InterviewChallenge\SDWorx\InterviewChallenge-1\MuseumTheft\MuseumTheftInfrastructure\obj\Debug\net6.0\ref\MuseumTheftInfrastructure.dll

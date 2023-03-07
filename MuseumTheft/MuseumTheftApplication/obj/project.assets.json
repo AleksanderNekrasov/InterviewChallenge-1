@@ -1,0 +1,123 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MuseumTheftCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MuseumTheftCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MuseumTheftCore.dll": {}
+        }
+      },
+      "MuseumTheftInfrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MuseumTheftCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MuseumTheftInfrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MuseumTheftInfrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MuseumTheftCore/1.0.0": {
+      "type": "project",
+      "path": "../MuseumTheftCore/MuseumTheftCore.csproj",
+      "msbuildProject": "../MuseumTheftCore/MuseumTheftCore.csproj"
+    },
+    "MuseumTheftInfrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MuseumTheftInfrastructure/MuseumTheftInfrastructure.csproj",
+      "msbuildProject": "../MuseumTheftInfrastructure/MuseumTheftInfrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "MuseumTheftInfrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\alexx\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\DEV\\VisualStudio_MyApps\\InterviewChallenge\\SDWorx\\InterviewChallenge-1\\MuseumTheft\\MuseumTheftApplication\\MuseumTheftApplication.csproj",
+      "projectName": "MuseumTheftApplication",
+      "projectPath": "D:\\DEV\\VisualStudio_MyApps\\InterviewChallenge\\SDWorx\\InterviewChallenge-1\\MuseumTheft\\MuseumTheftApplication\\MuseumTheftApplication.csproj",
+      "packagesPath": "C:\\Users\\alexx\\.nuget\\packages\\",
+      "outputPath": "D:\\DEV\\VisualStudio_MyApps\\InterviewChallenge\\SDWorx\\InterviewChallenge-1\\MuseumTheft\\MuseumTheftApplication\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\alexx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\DEV\\VisualStudio_MyApps\\InterviewChallenge\\SDWorx\\InterviewChallenge-1\\MuseumTheft\\MuseumTheftInfrastructure\\MuseumTheftInfrastructure.csproj": {
+              "projectPath": "D:\\DEV\\VisualStudio_MyApps\\InterviewChallenge\\SDWorx\\InterviewChallenge-1\\MuseumTheft\\MuseumTheftInfrastructure\\MuseumTheftInfrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

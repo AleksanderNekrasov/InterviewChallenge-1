@@ -1,0 +1,62 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MuseumTheftConsole/1.0.0": {
+        "dependencies": {
+          "MuseumTheftApplication": "1.0.0"
+        },
+        "runtime": {
+          "MuseumTheftConsole.dll": {}
+        }
+      },
+      "MuseumTheftApplication/1.0.0": {
+        "dependencies": {
+          "MuseumTheftInfrastructure": "1.0.0"
+        },
+        "runtime": {
+          "MuseumTheftApplication.dll": {}
+        }
+      },
+      "MuseumTheftCore/1.0.0": {
+        "runtime": {
+          "MuseumTheftCore.dll": {}
+        }
+      },
+      "MuseumTheftInfrastructure/1.0.0": {
+        "dependencies": {
+          "MuseumTheftCore": "1.0.0"
+        },
+        "runtime": {
+          "MuseumTheftInfrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MuseumTheftConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MuseumTheftApplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MuseumTheftCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MuseumTheftInfrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
