@@ -1,4 +1,5 @@
-﻿using MuseumTheftInfrastructure;
+﻿using MuseumTheftCore;
+using MuseumTheftInfrastructure;
 
 namespace MuseumTheftApplication
 {
@@ -15,8 +16,10 @@ namespace MuseumTheftApplication
         {
             _dataStore.InitFromUserInput(userInput);
             var items = await _dataStore.GetAll();
-
-            return string.Empty;
+            var combinations = new StolenItemCombinations(items);
+            var bag = Bag.CreateBagWithCapacity(bagCapacity);
+            bag.AddCombinations(combinations.GetStolenItemCombinations);
+            return bag.ToString();
         }
     }
 }
