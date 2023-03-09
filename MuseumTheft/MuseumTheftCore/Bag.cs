@@ -21,6 +21,11 @@
             }
         }
 
+        /// <summary>
+        /// Add unique combination of stolen items to the bag.
+        /// </summary>
+        /// <param name="items">Items to add</param>
+        /// <returns>Returns false if combination is not unique.</returns>
         public bool AddCombination(IStolenItemsCombination items)
         {
             if (items.Weight > _bagCapacity) return false;
@@ -31,7 +36,7 @@
         private IStolenItemsCombination MaxLoot() => 
             _possibleItemsCombinations.Last();
 
-        public override string ToString()
+        public string MaxProfitToString()
         {
             var maxLoot = MaxLoot();
             return $"Maximum profit is {maxLoot.Value}, the weights of items are: {maxLoot.WeightsOfItems()}.";

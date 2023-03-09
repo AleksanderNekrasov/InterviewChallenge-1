@@ -1,40 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MuseumTheftCore
+﻿namespace MuseumTheftCore
 {
-    public class StolenItemCombinations
+    public sealed class StolenItemCombinations
     {
-        private readonly IEnumerable<StolenItem> _stolenItems;
-        private readonly IList<Loot> _possibleLoots;
+        private readonly IStolenItemsRepository _repo;
 
-        public StolenItemCombinations(IEnumerable<StolenItem> stolenItems) 
+        public StolenItemCombinations(IStolenItemsRepository repo) 
+            => _repo = repo;
+
+        public async Task<IEnumerable<Loot>> GetStolenItemCombinations()
         {
-            _stolenItems = stolenItems;
-            _possibleLoots = new List<Loot>();
-            var idsOfItems = FindNumberCombinations(stolenItems.Select(x => x.ItemNumber).ToArray(), new List<int> ());
-            PopulatePossibleLoots(idsOfItems);
+            var stolenItems = await _repo.GetAll();
+            var idsOfItems = FindNumberCombinations(stolenItems.Select(x => x.ItemNumber).ToArray());
+            return PopulatePossibleLoots(idsOfItems, stolenItems);
         }
 
-        public IEnumerable<Loot> GetStolenItemCombinations => _possibleLoots;
-
-        private void PopulatePossibleLoots(IEnumerable<IEnumerable<int>> numsOfStolenItems) 
+        private IEnumerable<Loot> PopulatePossibleLoots(IEnumerable<IEnumerable<int>> numsOfStolenItems, IEnumerable<StolenItem> stolenItems) 
         {
             foreach (var nums in numsOfStolenItems) 
             {
-                if (nums.Count() == 0) continue;
+                if (!nums.Any()) continue;
 
-                _possibleLoots
-                    .Add(new Loot(_stolenItems
+                yield return new Loot(stolenItems
                         .Where(x => 
-                            nums.Contains(x.ItemNumber))));
+                            nums.Contains(x.ItemNumber)));
             }
         }
 
-        private IEnumerable<int[]> FindNumberCombinations(IEnumerable<int> stolenItems, List<int> temp)  
+        private static IEnumerable<int[]> FindNumberCombinations(IEnumerable<int> stolenItems)  
             => Enumerable.Range(0, 1 << (stolenItems.Count()))
                 .Select(index => stolenItems.Where((v, i) => (index & (1 << i)) != 0).ToArray());        
 

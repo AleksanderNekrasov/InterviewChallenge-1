@@ -2,24 +2,26 @@
 
 namespace MuseumTheftInfrastructure
 {
-    public class StolenItemsInMemoryStore : IStolenItemsStore
+    public sealed class StolenItemsInMemoryStore : IStolenItemsStore
     {
-        private IEnumerable<StolenItem> _stolenItems;
+        private IEnumerable<StolenItem>? _stolenItems;
 
         public void InitFromUserInput(string userInput)
         {
             try
             {
-                _stolenItems = ParceUserInput(userInput);
+                //Materialize enumerable here for error handling
+                _stolenItems = ParceUserInput(userInput)
+                    .ToArray();
             }
 
             catch (IndexOutOfRangeException e)
             {
-                throw new IncorrectInputException("For each stolen item 3 properties must be provided comma separated", e);
+                throw new IncorrectStolenInputException("For each stolen item 3 properties must be provided comma separated", e);
             }
-            catch (FormatException e)
+            catch (System.FormatException e)
             {
-                throw new IncorrectInputException("Properties of stolen item must be an interger", e);
+                throw new IncorrectStolenInputException("Properties of stolen item must be an interger and comma separated", e);
             }
         }
 
@@ -27,7 +29,7 @@ namespace MuseumTheftInfrastructure
             // in other implementations of interface this will be an async call to a data source
             // in current implementation data source is inmemory
             await Task.FromResult(_stolenItems);
-
+   
         private IEnumerable<StolenItem> ParceUserInput(string userInput)
         {
             var itemsAsText = userInput.Split(';');

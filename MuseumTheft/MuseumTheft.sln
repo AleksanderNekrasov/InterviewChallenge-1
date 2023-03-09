@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseumTheftConsole", "MuseumTheft\MuseumTheftConsole.csproj", "{1D9A126C-A548-443C-98A9-7CE24B6E588A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuseumTheftConsole", "MuseumTheft\MuseumTheftConsole.csproj", "{1D9A126C-A548-443C-98A9-7CE24B6E588A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseumTheftCore", "MuseumTheftCore\MuseumTheftCore.csproj", "{4BD12C39-8ABF-4850-9050-A14CAE9494A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuseumTheftCore", "MuseumTheftCore\MuseumTheftCore.csproj", "{4BD12C39-8ABF-4850-9050-A14CAE9494A4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuseumTheftInfrastructure", "MuseumTheftInfrastructure\MuseumTheftInfrastructure.csproj", "{AA76D7B0-5ACC-49F7-84FC-AFC343078BFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseumTheftApplication", "MuseumTheftApplication\MuseumTheftApplication.csproj", "{B89CBF57-A88D-42F4-A006-37CE7FE3D4B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuseumTheftApplication", "MuseumTheftApplication\MuseumTheftApplication.csproj", "{B89CBF57-A88D-42F4-A006-37CE7FE3D4B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuseumTheftCoreTests", "MuseumTheftCoreTests\MuseumTheftCoreTests.csproj", "{FDF1A13E-3892-4518-BB2C-FA2AD3D87D29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B89CBF57-A88D-42F4-A006-37CE7FE3D4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B89CBF57-A88D-42F4-A006-37CE7FE3D4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B89CBF57-A88D-42F4-A006-37CE7FE3D4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF1A13E-3892-4518-BB2C-FA2AD3D87D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF1A13E-3892-4518-BB2C-FA2AD3D87D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF1A13E-3892-4518-BB2C-FA2AD3D87D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF1A13E-3892-4518-BB2C-FA2AD3D87D29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

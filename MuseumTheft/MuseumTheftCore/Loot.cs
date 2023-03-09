@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace MuseumTheftCore
+﻿namespace MuseumTheftCore
 {
     public sealed class Loot : IStolenItemsCombination
     {
@@ -19,6 +17,11 @@ namespace MuseumTheftCore
             }
         }
 
+        /// <summary>
+        /// Adding stolen items to the loot. Item will be added only when it is unique
+        /// </summary>
+        /// <param name="item">Item to add</param>
+        /// <returns>Retuerns false if an item is duplicated.</returns>
         public bool AddItem(StolenItem item) =>
             _stolenItems.Add(item);
 

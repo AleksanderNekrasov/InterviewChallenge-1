@@ -15,12 +15,15 @@ var defaultInput = "1,30,10;2,10,20;3,40,30;4,20,40";
 
 var useCase = new FindMaxValueOfLootUseCase(new StolenItemsInMemoryStore());
 
+var input = inputProvided ? userInput ?? defaultInput : defaultInput;
+
+//this  is an entry point to application logic
 string output = await useCase
-    .GetMaximumAmmountForCapacity(inputProvided ? userInput ?? defaultInput : defaultInput, 40);
+    .GetMaximumAmmountForCapacity(input, 40);
 
 if (!inputProvided) 
 {
-    Console.WriteLine($"Input was not provided. Default input was used: {defaultInput}.");
+    Console.WriteLine($"Default input was used: {defaultInput}.");
     Console.WriteLine();
 }
 
