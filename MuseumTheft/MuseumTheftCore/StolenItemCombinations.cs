@@ -10,7 +10,7 @@
         public async Task<IEnumerable<Loot>> GetStolenItemCombinations()
         {
             var stolenItems = await _repo.GetAll();
-            var idsOfItems = FindNumberCombinations(stolenItems.Select(x => x.ItemNumber).ToArray());
+            var idsOfItems = FindNumberCombinations(stolenItems.Select(x => x.ItemNumber));
             return PopulatePossibleLoots(idsOfItems, stolenItems);
         }
 

@@ -1,4 +1,4 @@
 ﻿namespace MuseumTheftCore
 {
-    public sealed record StolenItem (int ItemNumber, int Value, int Weight);
+    public sealed record StolenItem (int ItemNumber, int Weight, int Value);
 }
