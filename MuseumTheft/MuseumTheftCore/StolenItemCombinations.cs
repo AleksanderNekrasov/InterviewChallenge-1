@@ -1,10 +1,10 @@
 ﻿namespace MuseumTheftCore
 {
-    public sealed class StolenItemCombinations
+    public sealed class StolenItemCombinations : IStolenItemCombinations
     {
         private readonly IStolenItemsRepository _repo;
 
-        public StolenItemCombinations(IStolenItemsRepository repo) 
+        public StolenItemCombinations(IStolenItemsRepository repo)
             => _repo = repo;
 
         public async Task<IEnumerable<Loot>> GetStolenItemCombinations()
@@ -14,21 +14,21 @@
             return PopulatePossibleLoots(idsOfItems, stolenItems);
         }
 
-        private IEnumerable<Loot> PopulatePossibleLoots(IEnumerable<IEnumerable<int>> numsOfStolenItems, IEnumerable<StolenItem> stolenItems) 
+        private static IEnumerable<Loot> PopulatePossibleLoots(IEnumerable<IEnumerable<int>> numsOfStolenItems, IEnumerable<StolenItem> stolenItems)
         {
-            foreach (var nums in numsOfStolenItems) 
+            foreach (var nums in numsOfStolenItems)
             {
                 if (!nums.Any()) continue;
 
                 yield return new Loot(stolenItems
-                        .Where(x => 
+                        .Where(x =>
                             nums.Contains(x.ItemNumber)));
             }
         }
 
-        private static IEnumerable<int[]> FindNumberCombinations(IEnumerable<int> stolenItems)  
+        private static IEnumerable<int[]> FindNumberCombinations(IEnumerable<int> stolenItems)
             => Enumerable.Range(0, 1 << (stolenItems.Count()))
-                .Select(index => stolenItems.Where((v, i) => (index & (1 << i)) != 0).ToArray());        
+                .Select(index => stolenItems.Where((v, i) => (index & (1 << i)) != 0).ToArray());
 
     }
 }

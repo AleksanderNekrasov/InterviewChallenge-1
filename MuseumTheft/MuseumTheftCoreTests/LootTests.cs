@@ -32,9 +32,9 @@ namespace MuseumTheftCoreTests
             //Arrange
             var stolenItems = new[]
             {
-                new StolenItem(_fixture.Create<int>(), _fixture.Create<int>(), weight1),
-                new StolenItem(_fixture.Create<int>(), _fixture.Create<int>(), weight2),
-                new StolenItem(_fixture.Create<int>(), _fixture.Create<int>(), weight3)
+                GetStolenItemWithWeight(weight1),
+                GetStolenItemWithWeight(weight2),
+                GetStolenItemWithWeight(weight3),
             };
 
             //Act
@@ -43,5 +43,11 @@ namespace MuseumTheftCoreTests
             //Assert
             loot.WeightsOfItems().Should().Be(sum);
         }
+
+        private StolenItem GetStolenItemWithWeight(int weight) =>
+             _fixture
+                .Build<StolenItem>()
+                .With(x => x.Weight, weight)
+                .Create();
     }
 }
